@@ -7,15 +7,12 @@ const cekBilPrima = (number) => {
           let check = 0;
           for (let i = 1; i <= number; i++) {
             if (number % i === 0) {
-                //apabila number dapat membagi dengan dirinya sendiri
                 check++;
             }
-            // console.log(jumlahDibagi);
           }
   
           if (check === 2) {
             resolve("Bilangan prima");
-            // console.log(jumlahDibagi);
           } else {
             reject(new Error("Bukan Bilangan prima"));
           }

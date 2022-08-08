@@ -7,6 +7,8 @@ let ambilData = new Promise((resolve, reject)=>{
         if(res.status == 200){
             resolve('sukses')
             return res.json()
+        }else if(res.status == 404){
+           reject('Not Found')
         }else{
             reject('gagal')
         }
